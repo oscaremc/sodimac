@@ -1,0 +1,128 @@
+*{
+      padding: 0;
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cabeceraIngresos{
+      display: flex;
+      text-align: center;
+      padding: 100px 0px;
+}
+.cabeceraIngresos p{
+      flex: 1 1 auto;
+}
+.formularioIngreso{
+      border-radius: 20px;
+      border: solid 1px #000;
+      width: 300px;
+      padding: 50px 50px;
+      margin: 0px auto;
+}
+.formularioIngreso input{
+      border-radius: 10px;
+      width: 250px;
+      height: 40px;
+      font-size: 15px;
+      padding: 5px;
+}
+.formularioIngreso p{
+      padding: 0;
+      margin: 0;
+      display: row-reverse;
+}
+.cabeceraOlvido{
+      margin: 100px 100px 0px 100px;
+}
+.textoCabecera{
+      width: 500px;
+}
+.formulariOlvido{
+      margin: 20px 100px;
+}
+.correoOlvido{
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+
+}
+.botonOlvido{
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+}
+.cabeceraSuperUsuario{
+      background-color: darkgrey;
+      display: flex;
+      padding: 20px 0px;
+
+}
+.botonCerrar{
+      margin: auto;
+      padding: 10px;
+      border-radius: 15px;
+}
+.cabeceraSuperUsuario h2{
+      margin: auto;
+      color: white;
+      font-size: 30px;
+}
+.padreBody{
+      display: flex;
+      width: 900px;
+      margin: auto;
+}
+.noticias{
+      height: 300px;
+      border: solid 2px #b5b5b5d6;
+      border-radius: 15px;
+      margin: 10px auto;
+      padding: 10px;
+
+}
+.itemsNavegacion{
+      margin: auto;
+      width: 400px;
+      display: flex;
+}
+.itemsNavegacion ul{
+      margin: auto;
+      height: 300px;
+}
+.itemsNavegacion li{
+      list-style: none;
+      border: solid 2px #b5b5b5d6;
+      border-radius: 15px;
+      padding: 10px;
+      width: 180px;
+      margin: 20px 5px;
+}
+.itemsNavegacion a{
+      text-decoration: none;
+      color: black;
+      display: flex;
+}
+.iconoCasa{
+      padding: 0;
+      margin: 0;
+      height: 24px;
+}
+.textoIcono{
+      padding: 3px;
+      margin: auto;
+}
+.homeBoton{
+      border: solid 1px #000;
+      border-radius: 10px;
+      background-color: #e8e8e8;
+      margin: auto ;
+      
+      padding: 0;
+}
+.homeBoton a{
+      margin: 0;
+      padding: 0;
+}
+.homeBoton img{
+      margin: 0;
+      padding: 10px;
+}

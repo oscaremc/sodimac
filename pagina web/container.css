@@ -1,0 +1,48 @@
+body{
+      background-color: ghostwhite;
+}
+.contenedor{
+      display: flex;
+      margin: auto;
+}
+.nav{
+      border-radius: 10px;
+      width: 300px;
+      background-color: gray;
+}
+.containerHijo{
+      width: 1050px;
+      max-width: 1200px;
+
+}
+.nav li{
+      background-color: whitesmoke;
+      padding: 10px;
+      margin: 10px 0px;
+      text-align: center;
+}
+.nav a{
+      text-decoration: none;
+      color: gray;
+      font-size: 15px;
+      
+}
+.headerContainerHijo{
+      padding: 5px;
+}
+.headerContainerHijo ul{
+      display: flex;
+}
+.headerContainerHijo li{
+      list-style: none;
+      width: 100px;
+      border: solid 1px;
+      margin: 20px auto;
+      border-radius: 5px;
+      padding: 3px 10px;
+      text-align: center;
+}
+.headerContainerHijo a{
+      text-decoration: none;
+      color: black;
+}

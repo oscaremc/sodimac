@@ -1,0 +1,45 @@
+.bannerBuscar{
+      padding: 20px;
+}
+.bannerBuscar ul{
+      display: flex;
+
+}
+.bannerBuscar li{
+      list-style: none;
+      margin: 0px 30px;
+}
+.bannerDetalles{
+      border: solid;
+      display: flex;
+}
+.bannerDetalles ul{
+      margin: auto;
+}
+
+.bannerDetalles li{
+      list-style: none;
+      margin: 15px ;
+}
+.bannerInput{
+      margin: 30px 50px;
+}
+.bannerInput ul{
+      display: flex;
+      
+}
+.bannerInput li{
+      list-style: none;
+      margin: 5px 20px;
+      text-align: center;
+}
+.seccionBotton{
+      text-align: center;
+
+}
+.seccionBotton input{
+      padding: 10px;
+      width: 120px;
+      font-size: 20px;
+      margin-top: 30px;
+}
