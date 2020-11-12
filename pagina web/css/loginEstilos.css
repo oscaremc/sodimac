@@ -6,26 +6,26 @@
 .cabeceraIngresos{
       display: flex;
       text-align: center;
-      padding: 100px 0px;
+      padding: 50px 0px;
 }
 .cabeceraIngresos p{
       flex: 1 1 auto;
 }
-.formularioIngreso{
+.formularioIngreso, .formularioUsuario{
       border-radius: 20px;
       border: solid 1px #000;
       width: 300px;
       padding: 50px 50px;
       margin: 0px auto;
 }
-.formularioIngreso input{
+.formularioIngreso input, .formularioUsuario input{
       border-radius: 10px;
       width: 250px;
       height: 40px;
       font-size: 15px;
       padding: 5px;
 }
-.formularioIngreso p{
+.formularioIngreso p, .formularioUsuario p{
       padding: 0;
       margin: 0;
       display: row-reverse;
@@ -125,4 +125,21 @@
 .homeBoton img{
       margin: 0;
       padding: 10px;
+}
+.textform{
+      display: flex;
+}
+.textform a{
+      margin: 0px 30px;
+      text-align: center;
+}
+.textform a{
+      flex: 1 1 auto;
+}
+.cerarButton, .ingresarButton, .crearButton{
+      padding: 5px;
+      margin:  0px 5px 20px auto;
+}
+.conteinerCerrarButton{
+      text-align: right;
 }
