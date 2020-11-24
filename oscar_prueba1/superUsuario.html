@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Super Usuario - homecenter</title>
+      <link rel="stylesheet" href="css/loginEstilos.css">
+</head>
+<body>
+      <header class="cabeceraSuperUsuario">
+            <p><h2>Bienvenido, Julanito peralta</h2></p>
+            <button type="submit" id="logout" class="cerrarSeccion">Cerrar seccion</button>
+      </header>
+      <div class="padreBody">            
+            <div class="noticias">
+                  En esta pagina encontraras las categorias permitidas para visualizar, modificar, crear y/o eleminar, informacion o elementos de la aplicacion movil. 
+            </div>
+            <div class="itemsNavegacion">
+                  <ul>
+                        <li><a href="homeCategoria.html"><img src="iconos/icons8-casa-24.png" alt="Icono Casa" class="iconoCasa"> <p class="textoIcono">Home</p></a></li>
+                        <li><a href="PortafolioCategoria.html"><img src="iconos/icons8-carpeta-24.png" alt="Icono Portafolio" class="iconoCasa"> <p class="textoIcono">landing page</p></a></li>
+                        <li><a href="sugeridosCategoria.html"><img src="iconos/icons8-carpeta-24.png" alt="Icono Productos sugeridos" class="iconoCasa"> <p class="textoIcono">Producto Sugerido</p></a></li>
+                        <li><a href="baseCategoria.html"><img src="iconos/icons8-base-de-datos-50.png" alt="Icono base de datos" class="iconoCasa"> <p class="textoIcono">Base de Datos</p></a></li>
+                  </ul>
+                  <ul>
+                        <li><a href="tiendaCategoria.html"><img src="iconos/icons8-actualización-de-ubicación-50.png" alt="Icono tienda" class="iconoCasa"> <p class="textoIcono">Tienda</p></a></li>
+                        <li><a href="wowCategoria.html"><img src="iconos/icons8-botón-de-wow-50.png" alt="Producto wow" class="iconoCasa"> <p class="textoIcono">Productos Wow</p></a></li>
+                        <li><a href="cmrCategoria.html"><img src="iconos/icons8-carpeta-24.png" alt="productos CMR " class="iconoCasa"> <p class="textoIcono">Productos CMR</p></a></li>
+                        <li><a href="editarCategoria.html"><img src="iconos/icons8-editar-32.png" alt="Editar categorias" class="iconoCasa"> <p class="textoIcono">Editar Categorias</p></a></li>
+                  </ul>
+            </div>
+      </div>
+
+<!--FIREBASE SCRIPTS-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<!--autenticacion permisos-->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCcj0u3qpqgBTuhccpaQ-El0zxWAZZ_N-s",
+    authDomain: "sodimac-homecenter.firebaseapp.com",
+    databaseURL: "https://sodimac-homecenter.firebaseio.com",
+    projectId: "sodimac-homecenter",
+    storageBucket: "sodimac-homecenter.appspot.com",
+    messagingSenderId: "347269687377",
+    appId: "1:347269687377:web:100e40c13ee039e1bab070",
+    measurementId: "G-8PJZW6CBP9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+
+</script>
+
+<!--CUSTOM CODE-->
+<script src="js/login.js"></script>
+
+</body>
+</html>

@@ -11,26 +11,27 @@
 <script>
       $(document).ready(function(){
             $('#bannerNav').click(function(){
-                  $("#contenidoNav").load("headerContainerBanner.html");
+                  $("#contenidoNav").load("ficha_buscar.html");
             });
             $('#homeModularNav').click(function(){
-                  $("#contenidoNav").load("homeModular.html");
+                  $("#contenidoNav").load("Modular_consular.html");
             });   
             $('#ideasNav').click(function(){
-                  $("#contenidoNav").load("cabeceraIdeas.html");
+                  $("#contenidoNav").load("ideas_consultar.html");
             });  
             $('#wowNav').click(function(){
-                  $("#contenidoNav").load("cabecerawow.html");
+                  $("#contenidoNav").load("wow_consultar.html");
             });   
             $('#cmrNav').click(function(){
-                  $("#contenidoNav").load("cabeceracmr.html");
+                  $("#contenidoNav").load("cmr_consultar.html");
             });            
       });
 </script>
 
 <body>
       <header class="cabeceraSuperUsuario">
-            <div class="homeBoton" title="Home"><a href="superUsuario.html"><img src="iconos/icons8-casa-24.png" alt=""></a></div>
+            <div class="homeBoton" title="Home"><a href="superUsuario.html">
+            <img src="iconos/icons8-casa-24.png" alt=""></a></div>
             <p><h2>bienvenido, Julanito Peralta</h2></p>
             <input type="button" value="Cerrar Seccion" class="botonCerrar">
       </header>
@@ -38,17 +39,13 @@
             <section class="nav">
                   <ul>
                         <li><a href=""></a></li>
-                        <li><a href="#" id="bannerNav">BANNER</a></li>
-                        <li><a href="#" id="homeModularNav">HOME MODULAR</a></li>
-                        <li><a href="#" id="ideasNav">IDEAS</a></li>
-                        <li><a href="#" id="wowNav">PRODUCTO WOW</a></li>
-                        <li><a href="#" id="cmrNav">PRODUCTOS CMR</a></li>
-                        <li><a href="">TIENDA</a></li>
+                        <li><a href="#" id="bannerNav">LISTA TIENDAS</a></li>
+                        <li><a href="#" id="homeModularNav">FICHA</a></li>
                         <li><a href=""></a></li>
                   </ul>
             </section>
             <section class="containerHijo" id="contenidoNav">
-            </section>
+            </section></section>
       </div>
 </body>
 </html>

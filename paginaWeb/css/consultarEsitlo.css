@@ -1,0 +1,50 @@
+.contenedorConsulta ul {
+      display: flex;
+}
+.contenedorConsulta li{
+      list-style: none;
+      margin: auto;
+}
+.contenedorImagen{
+      border: solid 1px #000;
+      border-radius: 3px;
+      width: 200px;
+      height: 250px;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column-reverse;
+}
+.tituloImagen{
+      background-color: darkgrey;
+}
+.modularImagen{
+      border: solid;
+      width: 500px;
+      height: auto;
+      min-height: 80px;
+      border-radius: 10px;
+}
+.contenedorModular li{
+      list-style: none;
+      margin: 20px auto;
+}
+.agregarModulo{
+      border-radius: 20px;
+      border: solid 5px rgb(230, 230, 230);
+      background-color: rgb(240, 240, 240);
+      font-size: 22px;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 3px 3px 3px;
+}
+.textAgregarModulo{
+      margin: auto;
+}
+.modularCrear{
+      background-color: rgb(240, 240, 240);
+      border: solid 5px rgb(230, 230, 230);
+      text-align: center;
+}
+.modularCrear a{
+      font-size:23px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOME - Homecenter</title>
+      <link rel="stylesheet" href="css/loginEstilos.css">
+      <link rel="stylesheet" href="css/container.css">
+      <link rel="stylesheet" href="css/crearEstilos.css">
+      <link rel="stylesheet" href="css/consultarEsitlo.css">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+      $('#volverVisual').click(function(){
+            $("#contenidoNav").load("masVisual.html");
+      });
+      $('#eliminarVisual').click(function(){
+            $("#contenidoNav").load("c_consultar.html");
+      });
+</script>
+
+<body>
+      <section class="hijoContenedorM"><div class="textHomeModular textCrear">En este espacio podras crear un nuevo elemento dento del home-banner-carrussel de la aplicacion movil. <br> Los parametos de dimensiones ya estan definidos por el suministrador del servicio. <br>
+            Si buscas modificar algun parametro de un elemento especifico o del nuevo elemento, despues de creado, se vera reflejado en la parte superior y lo deberas seleccionar para ingresar a sus parametros.
+      </div></section>
+      <div class="contenedorVisual">
+            <div class="contenidoVisual" id="ContenedorVisual">
+                  <section class="containerHijo" id="contenidoNav">
+                        <section class="contenedorInformacion">
+                              <div class="contenedorImagenCrear">
+                                    <img src="" alt="">
+                              </div>
+                              <div class="contenedorTextoCrear">
+                                    <ul>
+                                          <li class="ActionType"><p>ActionType :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>DataAction :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>Id :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>ImagenUrl :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>NumberOrden :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>Active :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>StarDate :</p><p>Respuesta...</p></li>
+                                          <li class="ActionType"><p>EndDate :</p><p>Respuesta...</p></li>
+                                    </ul>
+                              </div>
+                        </section>
+                        <section class="contenedorBotones">
+                              <div class="botonesVisual">
+                                    <div class="botonContenedor"> <a href="#" id="volverVisual">Volver</a></div>
+                                    <div class="botonContenedor"> <a href="#" id="eliminarVisual">Eliminar</a></div>
+                  
+                              </div>
+                        </section>
+                  </section>
+            </div>
+            
+
+      </div>
+
+</body>
+</html>

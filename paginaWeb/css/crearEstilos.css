@@ -1,0 +1,162 @@
+.bannerBuscar{
+      padding: 20px;
+      margin-top: 50px;
+
+}
+.bannerBuscar ul{
+      display: flex;
+
+}
+.bannerBuscar li{
+      list-style: none;
+      margin: 0px 30px;
+}
+.bannerDetalles{
+      border: solid;
+      display: flex;
+}
+.bannerDetalles ul{
+      margin: auto;
+}
+
+.bannerDetalles li{
+      list-style: none;
+      margin: 15px ;
+}
+.bannerInput{
+      margin: 30px 50px;
+}
+.bannerInput ul{
+      display: flex;
+      
+}
+.bannerInput li{
+      list-style: none;
+      margin: 5px 20px;
+      text-align: center;
+}
+.seccionBotton{
+      text-align: center;
+      margin-bottom: 100px;
+
+}
+.seccionBotton input{
+      padding: 10px;
+      width: 200px;
+      font-size: 20px;
+      margin-top: 30px;
+}
+.eliminar__elemento li{
+      border: solid 2px #e6e6e6;
+      width: 120px;
+      height: 170px;
+      padding: 5px;
+      margin: 10px;
+      font-size: 12px;
+}
+.eliminar__elemento ul{
+      display: flex;
+      list-style: none;
+      margin: 20px auto;
+}
+.encabezado__elimina__elemento{
+      padding: 10px;
+      background-color: rgb(240, 240, 240);  
+      box-shadow: 3px 3px 3px #e6e6e6;    
+}
+.eliminar__elemento__modulo{
+      text-align: center;
+      margin: auto;
+
+}
+.eliminar__elemento__modulo{
+      list-style: none;
+}
+.eliminar__elemento__modulo li{
+      border: solid;
+      height: 80px;
+      max-width: 600px;
+      margin: 20px;
+      border-radius: 10px;
+      list-style: none;
+}
+.ingresaDatosHomeBanner{
+      margin-top: 60px;
+      display: block;
+
+}
+.contenedorHomeBanner{
+      border: solid;
+}
+.ingresaDatosHomeBanner form{
+      width: 400px;
+      border: solid;
+      display: block;
+      margin: auto;
+}
+.actionType, .id, .urlImagen, .numberOrden, .active, .startDate, .endDate{
+      display: flex;
+}
+.actionType, .id, .urlImagen, .numberOrden, .active, .startDate, .endDate, .dataAction{
+      margin: 30px;
+}
+.actionTypeS, .idS, .urlImagenS, .numberOrdenS, .activeS, .startDateS, .endDateS, .dataActionS{
+      margin: auto 20px;
+}
+.contenedorInformacion{
+      display: flex;
+      margin: 40px auto;
+}
+.contenedorImagenCrear, .contenedorTextoCrear{
+      margin: auto;
+      min-width: 400px;
+}
+.contenedorImagenCrear{
+      text-align: right;
+}
+.contenedorImagenCrear img{
+      width: 200px;
+      height: 300px;
+}
+.contenedorTextoCrear li{
+      list-style: none;
+      display: flex;
+}
+.contenedorBarraBuscador{
+      display: flex;
+      padding: 20px 40px;
+      margin: 50px 0px 10px 0px;
+}
+.botonesFichaTienda{
+      display: flex;
+      padding: 5px 40px;
+
+}
+.botonTienda{
+      border-radius: 10px;
+      background-color: gray;
+      padding: 10px;
+      margin: 10px;
+}
+.botonTienda a{
+      text-decoration: none;
+      color: black;
+}
+.contenedorFinchaHijo{
+      border: solid;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 500px;
+}
+.mapaFicha{
+      border: 1px solid #000;
+      max-width: 500px;
+      height: 300px;
+      
+}
+.contenedorPadreCrud{
+      max-width: 900px;
+}
+.contenedorCrud{
+      display: flex;
+}

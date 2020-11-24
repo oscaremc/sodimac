@@ -7,39 +7,58 @@
       <link rel="stylesheet" href="css/container.css">
       <link rel="stylesheet" href="css/consultarEsitlo.css">
 </head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+      $(document).ready(function(){
+            $('#elementoVisual').click(function(){
+                  $('#contenidoNav').load("masVisual.html");
+            });
+            $('#crearModulo').click(function(){
+                  $('#contenidoNav').load("c_crear.html");
+            });
+      });
+</script>
+
 <body>
-      <section class="contenedorConsulta">
+      <section class="contenedorConsulta" >
+            <section class="hijoContenedorContenido">
+            <section class="hijoContenedorM"><div class="textHomeModular">En esta pagina puedes trabajar en las secciones del Home, que se ven en el menu (Lado Izquierdo). En este espacio puedes modificar especificamente las caracteristicas de los elementos.  <br> Si quieres modificar la informacion de un elemento en especifico puedes ingresar dandole click sobre el elemento. </div></section>
+
             <ul>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
             </ul>
@@ -47,37 +66,39 @@
             <ul>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
                         <div class="contenedorImagen">
+                              <a href="#" id="elementoVisual">
                               <div class="tituloImagen"> 
                                     <p>titulo</p>
                                     <p>detalle de la imagen</p>
-                              </div>
+                              </div></a>
                         </div>
                   </li>
                   <li>
-                        <div class="contenedorImagen">
-                              <div class="tituloImagen"> 
-                                    <p>titulo</p>
-                                    <p>detalle de la imagen</p>
-                              </div>
+                        <div class="contenedorImagen agregarModulo" >
+                              <div class="textAgregarModulo" ><a href="crud_banner.html" id="">Crear Nuevo Elemento</a></div>
                         </div>
                   </li>
             </ul>
+      
+            </section>
       </section>
 </body>
 </html>

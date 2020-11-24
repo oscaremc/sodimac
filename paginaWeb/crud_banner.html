@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOME - Homecenter</title>
+      <link rel="stylesheet" href="css/loginEstilos.css">
+      <link rel="stylesheet" href="css/container.css">
+      <link rel="stylesheet" href="css/consultarEsitlo.css">
+      <link rel="stylesheet" href="css/crearEstilos.css">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+      $(document).ready(function(){
+            $('#botonVisual').click(function(){
+                  $('#contenidoNav').load("masVisual.html");
+            });
+      });
+</script>
+<script>
+      $(document).ready(function(){
+            $('#bannerNav').click(function(){
+                  $("#contenidoNav").load("c_consultar.html");
+            });
+            $('#homeModularNav').click(function(){
+                  $("#contenidoNav").load("Modular_consular.html");
+            });   
+            $('#ideasNav').click(function(){
+                  $("#contenidoNav").load("ideas_consultar.html");
+            });  
+            $('#wowNav').click(function(){
+                  $("#contenidoNav").load("wow_consultar.html");
+            });   
+            $('#cmrNav').click(function(){
+                  $("#contenidoNav").load("cmr_consultar.html");
+            });            
+      });
+</script>
+
+<body>
+      <header class="cabeceraSuperUsuario">
+            <div class="homeBoton" title="Home"><a href="superUsuario.html">
+            <img src="iconos/icons8-casa-24.png" alt=""></a></div>
+            <p><h2>bienvenido, Julanito Peralta</h2></p>
+            <input type="button" value="Cerrar Seccion" class="botonCerrar">
+      </header>
+      <section class="contenedorCrud">
+            <div class="cuerpoBanner">
+                  <div class="contenedor">
+                        <section class="nav">
+                              <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href="#" id="bannerNav">BANNER</a></li>
+                                    <li><a href="#" id="homeModularNav">HOME MODULAR</a></li>
+                                    <li><a href="#" id="ideasNav">IDEAS</a></li>
+                                    <li><a href="#" id="wowNav">PRODUCTO WOW</a></li>
+                                    <li><a href="#" id="cmrNav">PRODUCTOS CMR</a></li>
+                                    <li><a href=""></a></li>
+                              </ul>
+                        </section> 
+                  </div>
+            </div>
+            <div class="contenedorPadreCrud">
+                  <section class="hijoContenedorM"><div class="textHomeModular textCrear">En este espacio podras crear un nuevo elemento dento del home-banner-carrussel de la aplicacion movil. <br> Los parametos de dimensiones ya estan definidos por el suministrador del servicio. <br>
+                        Si buscas modificar algun parametro de un elemento especifico o del nuevo elemento, despues de creado, se vera reflejado en la parte superior y lo deberas seleccionar para ingresar a sus parametros.
+                        </div></section>
+                        <section class="ingresaDatosHomeBanner">
+                        <form id="task-form">
+                              <section class="contenedorHomeBanner">
+                                    <section class="dataAction">
+                                          <label for="dataAction">ActionType :</label>
+                                          <select name="tipo" id="task-tipo" class="dataActionS">
+                                          <option value=""></option>
+                                          <option value="1">Leanding Page</option>
+                                          <option value="2">Idea</option>
+                                          <option value="3">Servicios</option>
+                                          <option value="4">Url</option>
+                                          <option value="5">Sku</option>
+                                          <option value="6">Void</option>
+                                          <option value="7">Webview</option>
+                                          </select>
+                                    </section>
+                                    <div class="actionType">
+                                          <p>DataAction :</p>
+                                          <input type="number" id="task-action" class="actionTypeS" placeholder="Ingresa numeros" autofocus >
+                                    </div>
+                                    <div class="id">
+                                          <p>Id :</p>
+                                          <input type="number" id="task-idb" class="idS" placeholder="Ingresa numeros">
+                                    </div>
+                                    <div class="urlImagen">
+                                          <p>ImagenUrl :</p>
+                                          <input type="url" id="task-url" class="urlImagenS" placeholder="Ingresar Ruta de imagen completa">
+                                    </div>
+                                    <div class="numberOrden">
+                                          <p>NumberOrden :</p>
+                                          <input type="number" id="task-orden" class="numberOrdenS" placeholder="Ingresa numeros">
+                                    </div>
+                                    <div class="active">
+                                          <p>Active :</p>
+                                          <input type="number" id="task-active" class="activeS" placeholder="Ingresa numeros">
+                                    </div>
+                                    <div class="startDate">
+                                          <p>Star Date :</p>
+                                          <input type="datetime-local"  id="task-star" class="startDateS">
+                                    </div>
+                                    <div class="endDate">
+                                          <p>End Date :</p>
+                                          <input type="datetime-local" id="task-end" class="endDateS">
+                                    </div>
+                        
+                        
+                              </section>           
+                                <button class="botonGuardado" id="btn-task-form">
+                                    Guardar
+                                </button>
+                        </form>    
+                        <div class="ingresaDatosHomeBanner" id="tasks-container"></div>
+            
+                        </section>
+                        <!--FIREBASE SCRIPTS-->
+                        <!-- The core Firebase JS SDK is always required and must be listed first -->
+                        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+                        <!--autenticacion permisos-->
+                        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+                        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+            
+                        <!-- TODO: Add SDKs for Firebase products that you want to use
+                        https://firebase.google.com/docs/web/setup#available-libraries -->
+                        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+            
+                        <script>
+                        // Your web app's Firebase configuration
+                        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                        var firebaseConfig = {
+                        apiKey: "AIzaSyCcj0u3qpqgBTuhccpaQ-El0zxWAZZ_N-s",
+                        authDomain: "sodimac-homecenter.firebaseapp.com",
+                        databaseURL: "https://sodimac-homecenter.firebaseio.com",
+                        projectId: "sodimac-homecenter",
+                        storageBucket: "sodimac-homecenter.appspot.com",
+                        messagingSenderId: "347269687377",
+                        appId: "1:347269687377:web:100e40c13ee039e1bab070",
+                        measurementId: "G-8PJZW6CBP9"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                        firebase.analytics();
+                        const auth = firebase.auth();
+            
+                        </script>
+            
+                        <script  src="index.js"></script>
+      
+            </div>
+
+      </section>
+</body>
+</html>

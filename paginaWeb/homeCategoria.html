@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOME - Homecenter</title>
+      <link rel="stylesheet" href="css/loginEstilos.css">
+      <link rel="stylesheet" href="css/container.css">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+      $(document).ready(function(){
+            $('#bannerNav').click(function(){
+                  $("#contenidoNav").load("c_consultar.html");
+            });
+            $('#homeModularNav').click(function(){
+                  $("#contenidoNav").load("Modular_consular.html");
+            });   
+            $('#ideasNav').click(function(){
+                  $("#contenidoNav").load("ideas_consultar.html");
+            });  
+            $('#wowNav').click(function(){
+                  $("#contenidoNav").load("wow_consultar.html");
+            });   
+            $('#cmrNav').click(function(){
+                  $("#contenidoNav").load("cmr_consultar.html");
+            });            
+      });
+</script>
+
+<body>
+      <header class="cabeceraSuperUsuario">
+            <div class="homeBoton" title="Home"><a href="superUsuario.html">
+            <img src="iconos/icons8-casa-24.png" alt=""></a></div>
+            <p><h2>bienvenido, Julanito Peralta</h2></p>
+            <input type="button" value="Cerrar Seccion" class="botonCerrar">
+      </header>
+      <div class="contenedor">
+            <section class="nav">
+                  <ul>
+                        <li><a href=""></a></li>
+                        <li><a href="#" id="bannerNav">BANNER</a></li>
+                        <li><a href="#" id="homeModularNav">HOME MODULAR</a></li>
+                        <li><a href="#" id="ideasNav">IDEAS</a></li>
+                        <li><a href="#" id="wowNav">PRODUCTO WOW</a></li>
+                        <li><a href="#" id="cmrNav">PRODUCTOS CMR</a></li>
+                        <li><a href=""></a></li>
+                  </ul>
+            </section>
+            <section class="containerHijo" id="contenidoNav">
+            </section></section>
+      </div>
+      <!--FIREBASE SCRIPTS-->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+      <!--autenticacion permisos-->
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+      <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+      apiKey: "AIzaSyCcj0u3qpqgBTuhccpaQ-El0zxWAZZ_N-s",
+      authDomain: "sodimac-homecenter.firebaseapp.com",
+      databaseURL: "https://sodimac-homecenter.firebaseio.com",
+      projectId: "sodimac-homecenter",
+      storageBucket: "sodimac-homecenter.appspot.com",
+      messagingSenderId: "347269687377",
+      appId: "1:347269687377:web:100e40c13ee039e1bab070",
+      measurementId: "G-8PJZW6CBP9"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const auth = firebase.auth();
+
+      </script>
+
+      <script  src="index.js"></script>
+</body>
+</html>

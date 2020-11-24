@@ -72,11 +72,13 @@
       margin: auto;
 }
 .noticias{
+      max-width: 300px;
       height: 300px;
       border: solid 2px #b5b5b5d6;
       border-radius: 15px;
       margin: 10px auto;
-      padding: 10px;
+      padding: 40px 10px 5px 10px;
+      text-align: justify;
 
 }
 .itemsNavegacion{
@@ -118,6 +120,11 @@
       
       padding: 0;
 }
+.cerrarSeccion{
+      margin: auto;
+      padding: 10px;
+      border-radius: 10px;
+}
 .homeBoton a{
       margin: 0;
       padding: 0;
@@ -142,4 +149,17 @@
 }
 .conteinerCerrarButton{
       text-align: right;
+}
+.hijoContenedorM{
+      margin: 5px;
+      max-width: 1000px;
+      max-height: 60px; 
+}
+.textHomeModular{
+      margin: auto;
+      padding: 15px;
+      font-size: 12px;
+      width: 800px;
+      background-color: rgb(240, 240, 240);
+      box-shadow: 5px 5px 3px #e6e6e6;
 }

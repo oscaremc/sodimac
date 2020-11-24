@@ -3,9 +3,9 @@ body{
 }
 .contenedor{
       display: flex;
-      margin: auto;
 }
 .nav{
+      min-width: 200px;
       border-radius: 10px;
       width: 300px;
       background-color: gray;
@@ -16,6 +16,7 @@ body{
 
 }
 .nav li{
+      list-style: none;
       background-color: whitesmoke;
       padding: 10px;
       margin: 10px 0px;
@@ -29,20 +30,49 @@ body{
 }
 .headerContainerHijo{
       padding: 5px;
+      border: solid 3px rgb(240 , 240, 240);
 }
 .headerContainerHijo ul{
       display: flex;
 }
 .headerContainerHijo li{
       list-style: none;
-      width: 100px;
+      width: 120px;
       border: solid 1px;
       margin: 20px auto;
       border-radius: 5px;
       padding: 3px 10px;
       text-align: center;
+      box-shadow: 3px 3px 3px;
 }
 .headerContainerHijo a{
+      text-decoration: none;
+      color: black;
+}
+.containerHijoCrear{
+      max-width: 1000px;
+      margin: auto;
+}
+.textCrear{
+      margin: 60px auto;
+}
+.botonGuardarCrear{
+      padding: 10px;
+      border-radius: 5px;
+}
+.contenedorVisual, .botonesVisual{
+      display: flex;
+}
+.botonesVisual{
+      justify-content: center;
+}
+.botonContenedor{
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      background-color: #e6e6e6;
+}
+.botonContenedor a{
       text-decoration: none;
       color: black;
 }

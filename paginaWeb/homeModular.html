@@ -13,9 +13,15 @@
             $("#consultar").click(function(){
                   $("#contenido").load("Modular_consular.html");
             });
-            $('#crear').click(function(){
-                  $("#contenido").load("Modular_crear.html");
+            $('#modificar').click(function(){
+                  $("#contenido").load("modulo_modificar.html");
+            });     
+            $('#eliminar').click(function(){
+                  $("#contenido").load("Modulo_eliminar.html");
             });            
+            $('#info').click(function(){
+                  $("#contenido").load("modulo_info.html");
+            });     
       });
 </script>
 <body>
@@ -23,9 +29,9 @@
             <div class="headerContainerHijo">
                   <ul>
                         <li><a href="#" id="consultar">Consultar</a></li>
-                        <li><a href="#" id="crear">crear</a></li>
-                        <li><a href="#" id="crear">Modificar</a></li>
-                        <li><a href="#" id="crear">Eliminar</a></li>
+                        <li><a href="#" id="modificar">Modificar</a></li>
+                        <li><a href="#" id="eliminar">Eliminar</a></li>
+                        <li><a href="#" id="info">Documentacion</a></li>
                   </ul>
             </div>
       </section>

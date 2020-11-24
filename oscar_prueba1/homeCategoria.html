@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOME - Homecenter</title>
+      <link rel="stylesheet" href="css/loginEstilos.css">
+      <link rel="stylesheet" href="css/container.css">
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script>
+      $(document).ready(function(){
+            $('#bannerNav').click(function(){
+                  $("#contenidoNav").load("headerContainerBanner.html");
+            });
+            $('#homeModularNav').click(function(){
+                  $("#contenidoNav").load("homeModular.html");
+            });   
+            $('#ideasNav').click(function(){
+                  $("#contenidoNav").load("cabeceraIdeas.html");
+            });  
+            $('#wowNav').click(function(){
+                  $("#contenidoNav").load("cabecerawow.html");
+            });   
+            $('#cmrNav').click(function(){
+                  $("#contenidoNav").load("cabeceracmr.html");
+            });            
+      });
+</script>
+
+<body>
+      <header class="cabeceraSuperUsuario">
+            <div class="homeBoton" title="Home"><a href="superUsuario.html">
+            <img src="iconos/icons8-casa-24.png" alt=""></a></div>
+            <p><h2>bienvenido, Julanito Peralta</h2></p>
+            <input type="button" value="Cerrar Seccion" class="botonCerrar">
+      </header>
+      <div class="contenedor">
+            <section class="nav">
+                  <ul>
+                        <li><a href=""></a></li>
+                        <li><a href="#" id="bannerNav">BANNER</a></li>
+                        <li><a href="#" id="homeModularNav">HOME MODULAR</a></li>
+                        <li><a href="#" id="ideasNav">IDEAS</a></li>
+                        <li><a href="#" id="wowNav">PRODUCTO WOW</a></li>
+                        <li><a href="#" id="cmrNav">PRODUCTOS CMR</a></li>
+                        <li><a href="">TIENDA</a></li>
+                        <li><a href=""></a></li>
+                  </ul>
+            </section>
+            <section class="hijoContenedorContenido">
+            <section class="hijoContenedorM"><div class="textHomeModular">En esta pagina puedes trabajar en las secciones del Home, que se ven en el menu (Lado Izquierdo). En este espacio puedes modificar especificamente las caracteristicas de los elementos.  <br> Si quieres modificar la informacion de un elemento en especifico puedes ingresar dandole click sobre el elemento. </div></section>
+
+            <section class="containerHijo" id="contenidoNav">
+            </section></section>
+      </div>
+</body>
+</html>
